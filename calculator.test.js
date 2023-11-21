@@ -107,8 +107,8 @@ describe('modulus', () => {
 
 describe('even', () => {
   test('can get an even result', () => {
-    expected = 0;
-    actual = modulus(10, 5);
+    expected = true;
+    actual = even(10);
     expect(actual).toBe(expected);
   })
 
@@ -118,8 +118,8 @@ describe('even', () => {
 
 describe('odd', () => {
   test('can get an odd result', () => {
-    expected = 1;
-    actual = modulus(10, 9);
+    expected = true;
+    actual = odd(9);
     expect(actual).toBe(expected);
   })
 });
